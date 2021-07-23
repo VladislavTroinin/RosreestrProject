@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="2021-07-12--information-schema" author="Vladislav" runOnChange="true">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="information"/>
+            </not>
+        </preConditions>
+        <createTable tableName="information">
+            <column name="information_id" type="bigserial" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="request_timestamp" type="timestamp">
+                <constraints nullable="false"/>
+            </column>
+            <column name="url" type="varchar(256)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="type_number" type="integer">
+                <constraints nullable="false"/>
+            </column>
+            <column name="cadastre_number" type="varchar(16)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="address" type="varchar(256)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="cadastre_cost" type="decimal">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>
