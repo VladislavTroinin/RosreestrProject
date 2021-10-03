@@ -1,9 +1,10 @@
-package com.practice.rosreestr.service;
+package com.practice.rosreestr.serviceimpl;
 
 import com.practice.rosreestr.dto.PageDto;
 import com.practice.rosreestr.entity.Information;
 import com.practice.rosreestr.exception.ResourceNotFoundException;
 import com.practice.rosreestr.repository.InformationRepository;
+import com.practice.rosreestr.service.InformationJournalService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Service;

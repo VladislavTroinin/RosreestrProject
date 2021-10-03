@@ -1,4 +1,4 @@
-package com.practice.rosreestr.service;
+package com.practice.rosreestr.serviceimpl;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
@@ -8,6 +8,7 @@ import com.practice.rosreestr.dto.InformationDto;
 import com.practice.rosreestr.entity.Information;
 import com.practice.rosreestr.exception.WebServiceNotAccessibleException;
 import com.practice.rosreestr.repository.InformationRepository;
+import com.practice.rosreestr.service.InformationService;
 import com.practice.rosreestr.util.HttpExchangeClient;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;

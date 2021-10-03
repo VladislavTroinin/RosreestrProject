@@ -1,4 +1,4 @@
-package com.practice.rosreestr.service;
+package com.practice.rosreestr.serviceimpl;
 
 import com.practice.rosreestr.dto.AccessibilityDto;
 import com.practice.rosreestr.dto.HttpExchangeDto;
@@ -7,6 +7,7 @@ import com.practice.rosreestr.model.AccessibilityStatus;
 import com.practice.rosreestr.exception.WebException;
 import com.practice.rosreestr.exception.WebServiceNotAccessibleException;
 import com.practice.rosreestr.repository.AccessibilityRepository;
+import com.practice.rosreestr.service.AccessibilityService;
 import com.practice.rosreestr.util.HttpExchangeClient;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
