@@ -1,11 +1,8 @@
 package com.practice.rosreestr.wscontroller;
 
 import com.practice.rosreestr.annotation.WebSocketEndpoint;
-import com.practice.rosreestr.dto.AccessibilityDto;
-import com.practice.rosreestr.exception.WebServiceNotAccessibleException;
-import com.practice.rosreestr.service.AccessibilityServiceImp;
+import com.practice.rosreestr.serviceimpl.AccessibilityServiceImp;
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 
 @RequiredArgsConstructor

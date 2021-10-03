@@ -2,7 +2,7 @@ package com.practice.rosreestr.restcontroller;
 
 import com.practice.rosreestr.dto.InformationDto;
 import com.practice.rosreestr.exception.WebServiceNotAccessibleException;
-import com.practice.rosreestr.service.InformationServiceImp;
+import com.practice.rosreestr.serviceimpl.InformationServiceImp;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
