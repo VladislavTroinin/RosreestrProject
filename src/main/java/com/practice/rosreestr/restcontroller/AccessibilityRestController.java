@@ -18,7 +18,7 @@ public class AccessibilityRestController {
     private final AccessibilityService accessibilityService;
 
     @GetMapping
-    public ResponseEntity<AccessibilityDto> getAccessibility() throws WebServiceNotAccessibleException {
+    public ResponseEntity<AccessibilityDto> getAccessibility() {
         return new ResponseEntity<>(accessibilityService.getAccessibility(), HttpStatus.OK);
     }
 

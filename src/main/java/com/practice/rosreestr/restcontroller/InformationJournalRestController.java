@@ -21,7 +21,7 @@ public class InformationJournalRestController {
     private final InformationJournalService informationJournalService;
 
     @GetMapping("/{id}")
-    public ResponseEntity<Information> getInformationById(@PathVariable Long id) throws ResourceNotFoundException {
+    public ResponseEntity<Information> getInformationById(@PathVariable Long id) {
         return new ResponseEntity<>(informationJournalService.getInformationById(id), HttpStatus.OK);
     }
 

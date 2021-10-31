@@ -14,12 +14,9 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
-import java.io.IOException;
 import java.math.BigDecimal;
 import java.net.URI;
-import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
 import java.time.Duration;
 import java.util.*;
 
@@ -43,7 +40,7 @@ public class InformationServiceImp implements InformationService {
 
     private final HttpExchangeClient httpExchangeClient;
 
-    public InformationDto getInformation(Integer typeId, String objectId) throws WebServiceNotAccessibleException {
+    public InformationDto getInformation(Integer typeId, String objectId) {
         int currentURLIndex = 0;
         Information information = getInformationForURL(URLs[currentURLIndex], typeId, objectId);
         while (Objects.isNull(information) && ++currentURLIndex < URLs.length) {

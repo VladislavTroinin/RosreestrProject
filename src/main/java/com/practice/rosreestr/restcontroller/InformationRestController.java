@@ -19,9 +19,7 @@ public class InformationRestController {
     private final InformationServiceImp informationService;
 
     @GetMapping("/{typeId}/{objectId}")
-    public ResponseEntity<InformationDto> getInformation(@PathVariable Integer typeId, @PathVariable String objectId)
-            throws WebServiceNotAccessibleException
-    {
+    public ResponseEntity<InformationDto> getInformation(@PathVariable Integer typeId, @PathVariable String objectId) {
         return new ResponseEntity<>(informationService.getInformation(typeId, objectId), HttpStatus.OK);
     }
 

@@ -1,6 +1,6 @@
 package com.practice.rosreestr.exception;
 
-public class WebException extends Exception {
+public class WebException extends RuntimeException {
 
     public WebException() {
         super();

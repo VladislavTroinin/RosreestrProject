@@ -1,6 +1,6 @@
 package com.practice.rosreestr.exception;
 
-public class ClientException extends Exception {
+public class ClientException extends RuntimeException {
 
     public ClientException() {
         super();

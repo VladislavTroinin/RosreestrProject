@@ -15,7 +15,7 @@ public class AccessibilityJournalServiceImp implements AccessibilityJournalServi
 
     private final AccessibilityRepository accessibilityRepository;
 
-    public Accessibility getAccessibilityById(Long id) throws ResourceNotFoundException {
+    public Accessibility getAccessibilityById(Long id) {
         return accessibilityRepository
                 .findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException(

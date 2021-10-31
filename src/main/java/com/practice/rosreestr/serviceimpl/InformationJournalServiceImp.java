@@ -15,7 +15,7 @@ public class InformationJournalServiceImp implements InformationJournalService {
 
     private final InformationRepository informationRepository;
 
-    public Information getInformationById(Long id) throws ResourceNotFoundException {
+    public Information getInformationById(Long id) {
         return informationRepository
                 .findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException(

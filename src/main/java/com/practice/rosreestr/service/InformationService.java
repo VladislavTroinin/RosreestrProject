@@ -5,6 +5,6 @@ import com.practice.rosreestr.exception.WebServiceNotAccessibleException;
 
 public interface InformationService {
 
-    InformationDto getInformation(Integer typeId, String objectId) throws WebServiceNotAccessibleException;
+    InformationDto getInformation(Integer typeId, String objectId);
 
 }

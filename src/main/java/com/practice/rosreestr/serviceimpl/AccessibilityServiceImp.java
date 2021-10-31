@@ -51,7 +51,7 @@ public class AccessibilityServiceImp implements AccessibilityService {
         }
     }
 
-    public AccessibilityDto getAccessibility() throws WebServiceNotAccessibleException {
+    public AccessibilityDto getAccessibility() {
         int currentURLIndex = 0;
         Accessibility accessibility = getAccessibilityForURL(URLs[currentURLIndex]);
         while (accessibility.getStatus().equals(AccessibilityStatus.FAILURE) && ++currentURLIndex < URLs.length) {

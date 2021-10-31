@@ -7,7 +7,7 @@ import org.springframework.data.domain.Page;
 
 public interface AccessibilityJournalService {
 
-    Accessibility getAccessibilityById(Long id) throws ResourceNotFoundException;
+    Accessibility getAccessibilityById(Long id);
 
     Page<Accessibility> getAccessibilityPage(PageDto pageDto);
 

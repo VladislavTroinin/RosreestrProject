@@ -21,7 +21,7 @@ public class AccessibilityJournalRestController {
     private final AccessibilityJournalService accessibilityJournalService;
 
     @GetMapping("/{id}")
-    public ResponseEntity<Accessibility> getAccessibilityById(@PathVariable Long id) throws ResourceNotFoundException {
+    public ResponseEntity<Accessibility> getAccessibilityById(@PathVariable Long id) {
         return new ResponseEntity<>(accessibilityJournalService.getAccessibilityById(id), HttpStatus.OK);
     }
 

@@ -7,7 +7,7 @@ import org.springframework.data.domain.Page;
 
 public interface InformationJournalService {
 
-    Information getInformationById(Long id) throws ResourceNotFoundException;
+    Information getInformationById(Long id);
 
     Page<Information> getInformationPage(PageDto pageDto);
 

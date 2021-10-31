@@ -5,6 +5,6 @@ import com.practice.rosreestr.exception.WebServiceNotAccessibleException;
 
 public interface AccessibilityService {
 
-    AccessibilityDto getAccessibility() throws WebServiceNotAccessibleException;
+    AccessibilityDto getAccessibility();
 
 }

@@ -13,7 +13,7 @@ public class AccessibilityWebSocketController implements WebSocketController {
     private final AccessibilityServiceImp accessibilityService;
 
     @Override
-    public Object getAnswer(String payload) throws Exception {
+    public Object getAnswer(String payload) {
         return accessibilityService.getAccessibility();
     }
 
