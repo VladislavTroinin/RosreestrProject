@@ -2,7 +2,6 @@ package com.practice.rosreestr.restcontroller;
 
 import com.practice.rosreestr.dto.PageDto;
 import com.practice.rosreestr.entity.Information;
-import com.practice.rosreestr.exception.ResourceNotFoundException;
 import com.practice.rosreestr.service.InformationJournalService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;

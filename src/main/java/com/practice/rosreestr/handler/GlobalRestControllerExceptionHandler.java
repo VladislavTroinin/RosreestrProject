@@ -5,12 +5,10 @@ import com.practice.rosreestr.exception.ResourceNotFoundException;
 import com.practice.rosreestr.exception.WebServiceNotAccessibleException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.messaging.handler.annotation.MessageExceptionHandler;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import java.io.IOException;
 import java.util.Date;
 
 @ControllerAdvice

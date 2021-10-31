@@ -1,7 +1,6 @@
 package com.practice.rosreestr.util;
 
 import com.practice.rosreestr.dto.HttpExchangeDto;
-import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;

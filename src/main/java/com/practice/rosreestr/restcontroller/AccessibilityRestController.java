@@ -1,7 +1,6 @@
 package com.practice.rosreestr.restcontroller;
 
 import com.practice.rosreestr.dto.AccessibilityDto;
-import com.practice.rosreestr.exception.WebServiceNotAccessibleException;
 import com.practice.rosreestr.service.AccessibilityService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
